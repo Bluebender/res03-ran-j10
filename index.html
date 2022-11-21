@@ -39,7 +39,7 @@
                 <br>
                 <br>
             
-                <input type="submit" value="ENREGISTRER"/>
+                <input class="bouton" type="submit" value="ENREGISTRER"/>
                 
             </form>
             
@@ -49,52 +49,78 @@
             <h2>PROFIL PROFESSIONNEL</h2>
             
             <form action="page.html" method="post">
-                <fieldcheck>
+                <div class="checkbox">
                     <legend>Niveau d'étude</legend>
-                    <input type="radio" id="cap" name="niveau"/>
-                    <label for="cap">CAP - BEP</label>
-                    <br>
-                    <input type="radio" id="bac" name="niveau"/>
-                    <label for="bac">Bac</label>
-                    <br>
-                    <input type="radio" id="bac+2" name="niveau"/>
-                    <label for="bac+2">Bac +2</label>
-                    <br>
-                    <input type="radio" id="bac+3" name="niveau"/>
-                    <label for="bac+3">Bac +3</label>
-                    <br>
-                    <input type="radio" id="bac+5" name="niveau"/>
-                    <label for="bac+5">Bac +5</label>
-                    <br>
-                    <input type="radio" id="bac+7" name="niveau"/>
-                    <label for="bac+7">Bac +7</label>
-                    <br>
-                </fieldcheck>
+                    <fieldset>
+                        <input type="radio" id="cap" name="niveau"/>
+                        <label for="cap">CAP - BEP</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="radio" id="bac+3" name="niveau"/>
+                        <label for="bac+3">Bac +3</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="radio" id="bac" name="niveau"/>
+                        <label for="bac">Bac</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="radio" id="bac+5" name="niveau"/>
+                        <label for="bac+5">Bac +5</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="radio" id="bac+2" name="niveau"/>
+                        <label for="bac+2">Bac +2</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="radio" id="bac+7" name="niveau"/>
+                        <label for="bac+7">Bac +7</label>
+                        <br>
+                        <br>
+                    </fieldset>
+                </div>
 
-                <fieldcheck>
+                <div class="checkbox">
                     <legend>Profil de développeur</legend>
-                    <input type="radio" id="back" name="dev"/>
-                    <label for="back">Dev Web Backend</label>
+                    
+                    <fieldset>
+                        <input type="radio" id="back" name="dev"/>
+                        <label for="back">Dev Web Backend</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="radio" id="game" name="dev"/>
+                        <label for="game">Dev Jeux Vidéo</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="radio" id="front" name="dev"/>
+                        <label for="front">Dev Web Frontend</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="radio" id="logiciel" name="dev"/>
+                        <label for="logiciel">Dev Logiciel</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="radio" id="full" name="dev"/>
+                        <label for="full">Dev Web Fullstrack</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="radio" id="mobil" name="dev"/>
+                        <label for="mobil">Dev Mobil</label>
+                        <br>
+                    </fieldset>
                     <br>
-                    <input type="radio" id="front" name="dev"/>
-                    <label for="front">Dev Web Frontend</label>
-                    <br>
-                    <input type="radio" id="full" name="dev"/>
-                    <label for="full">Dev Web Fullstrack</label>
-                    <br>
-                    <input type="radio" id="game" name="dev"/>
-                    <label for="game">Dev Jeux Vidéo</label>
-                    <br>
-                    <input type="radio" id="logiciel" name="dev"/>
-                    <label for="logiciel">Dev Logiciel</label>
-                    <br>
-                    <input type="radio" id="mobil" name="dev"/>
-                    <label for="mobil">Dev Mobil</label>
-                    <br>
-                    <br>
-                </fieldcheck>
+                </div>
                 
-                <input type="submit" value="ENREGISTRER"/>
+                <input class="bouton" type="submit" value="ENREGISTRER"/>
                 
             </form>
         </section>
@@ -104,33 +130,52 @@
             
             <form action="page.html" method="post">
                 
-                <input type="checkbox" id="banque" name="banque"/>
-                <label for="banque">Banque</label>
-                <br>
-                <input type="checkbox" id="publicité" name="publicité"/>
-                <label for="publicité">Publicité</label>
-                <br>
-                <input type="checkbox" id="finance" name="finance"/>
-                <label for="finance">Finance</label>
-                <br>
-                <input type="checkbox" id="santé" name="santé"/>
-                <label for="santé">Santé</label>
-                <br>
-                <input type="checkbox" id="communication" name="communication"/>
-                <label for="communication">Communication</label>
-                <br>
-                <input type="checkbox" id="défense" name="défense"/>
-                <label for="défense">Défense</label>
-                <br>
-                <input type="checkbox" id="éducation" name="éducation"/>
-                <label for="éducation">Education</label>
-                <br>
-                <input type="checkbox" id="politique" name="politique"/>
-                <label for="politique">Politique</label>
-                <br>
-                <br>
+                <div id="choix_multiples">
+                    <fieldset>
+                        <input type="checkbox" id="banque" name="banque"/>
+                        <label for="banque">Banque</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" id="communication" name="communication"/>
+                        <label for="communication">Communication</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" id="publicité" name="publicité"/>
+                        <label for="publicité">Publicité</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" id="défense" name="défense"/>
+                        <label for="défense">Défense</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" id="finance" name="finance"/>
+                        <label for="finance">Finance</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" id="éducation" name="éducation"/>
+                        <label for="éducation">Education</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" id="santé" name="santé"/>
+                        <label for="santé">Santé</label>
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" id="politique" name="politique"/>
+                        <label for="politique">Politique</label>
+                        <br>
+                        <br>
+                    </fieldset>
+                </div>
                 
-                <input type="submit" value="ENREGISTRER"/>
+                <input class="bouton" type="submit" value="ENREGISTRER"/>
+                
                 
             </form>
         </section>
