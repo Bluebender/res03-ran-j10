@@ -15,7 +15,7 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-row: 1fr;
     grid-gap: 1px;
-    background-color: #253879;
+    background-color: white;
 }
 section{
     background-color: white;
@@ -65,7 +65,24 @@ legend{
 .bouton{
     color: white;
     background-color: #3a61ef;
-    font-size: 0.6em;
+    font-size: 0.8em;
     padding: 5px 10px;
     border: none;
+}
+.case{
+    width: 100%;
+    background-color: #dfe4f7;
+    border: none;
+}
+
+buton{
+    color: white;
+    background-color: #3a61ef;
+    padding: 5px 10px;
+    border: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.8em;
+}
+.passive{
+    opacity: 0.35;
 }

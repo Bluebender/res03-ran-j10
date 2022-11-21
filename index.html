@@ -15,69 +15,70 @@
     </header>
     
     <main>
-        <section>
+        <section id="section1" class="active">
             <h2>INFORMATION DE CONNEXION</h2>
-            <form action="page.html" method="post">
+            <form action="" method="post">
                 <label for="user_name">Nom d'utilisateur</label>
                 <br>
-                <input type="text" id="user_name" name="user_name"/>
+                <input class="case" type="text" id="user_name" name="user_name"/>
                 <br>
             
                 <label for="mail">Email</label>
                 <br>
-                <input type="email" id="mail" name="mail"/>
+                <input class="case"type="email" id="mail" name="mail"/>
                 <br>
             
                 <label for="password">Mot de passe</label>
                 <br>
-                <input type="password" id="password" name="password"/>
+                <input class="case" type="password" id="password" name="password"/>
                 <br>
             
-                <label for="password">Confirmer le mot de passe</label>
+                <label for="confirmation_password">Confirmer le mot de passe</label>
                 <br>
-                <input type="password" id="password" name="password"/>
+                <input class="case" type="password" id="confirmation_password" name="password"/>
                 <br>
                 <br>
-            
-                <input class="bouton" type="submit" value="ENREGISTRER"/>
+
+                <buton id="bouton1">ENREGISTRER</buton>
+                <!--<input class="bouton" type="submit" value="ENREGISTRER"/>-->
                 
             </form>
             
         </section>
         
-        <section>
+        <section id="section2" class="passive">
             <h2>PROFIL PROFESSIONNEL</h2>
             
-            <form action="page.html" method="post">
+            <form action="" method="get">
                 <div class="checkbox">
-                    <legend>Niveau d'étude</legend>
+                    <legend>Niveau d'études</legend>
                     <fieldset>
-                        <input type="radio" id="cap" name="niveau"/>
+                        <input type="radio" id="cap" name="niveau" value="cap"/>
                         <label for="cap">CAP - BEP</label>
                         <br>
                     </fieldset>
                     <fieldset>
-                        <input type="radio" id="bac+3" name="niveau"/>
+                        <input type="radio" id="bac+3" name="niveau" value="bac+3"/>
                         <label for="bac+3">Bac +3</label>
                         <br>
                     </fieldset>
                     <fieldset>
-                        <input type="radio" id="bac" name="niveau"/>
+                        <input type="radio" id="bac" name="niveau" value="bac"/>
                         <label for="bac">Bac</label>
                         <br>
                     </fieldset>
                     <fieldset>
-                        <input type="radio" id="bac+5" name="niveau"/>
+                        <input type="radio" id="bac+5" name="niveau" value="bac+5"/>
                         <label for="bac+5">Bac +5</label>
                         <br>
                     </fieldset>
                     <fieldset>
-                        <input type="radio" id="bac+2" name="niveau"/>
+                        <input type="radio" id="bac+2" name="niveau" value="bac+2"/>
                         <label for="bac+2">Bac +2</label>
                         <br>
                     </fieldset>
                     <fieldset>
-                        <input type="radio" id="bac+7" name="niveau"/>
+                        <input type="radio" id="bac+7" name="niveau" value="bac+7"/>
                         <label for="bac+7">Bac +7</label>
                         <br>
                         <br>
@@ -88,47 +89,48 @@
                     <legend>Profil de développeur</legend>
                     
                     <fieldset>
-                        <input type="radio" id="back" name="dev"/>
+                        <input type="radio" id="back" name="dev" value="back"/>
                         <label for="back">Dev Web Backend</label>
                         <br>
                     </fieldset>
                     <fieldset>
-                        <input type="radio" id="game" name="dev"/>
+                        <input type="radio" id="game" name="dev" value="game"/>
                         <label for="game">Dev Jeux Vidéo</label>
                         <br>
                     </fieldset>
                     <fieldset>
-                        <input type="radio" id="front" name="dev"/>
+                        <input type="radio" id="front" name="dev" value="front"/>
                         <label for="front">Dev Web Frontend</label>
                         <br>
                     </fieldset>
                     <fieldset>
-                        <input type="radio" id="logiciel" name="dev"/>
+                        <input type="radio" id="logiciel" name="dev" value="logiciel"/>
                         <label for="logiciel">Dev Logiciel</label>
                         <br>
                     </fieldset>
                     <fieldset>
-                        <input type="radio" id="full" name="dev"/>
+                        <input type="radio" id="full" name="dev" value="full"/>
                         <label for="full">Dev Web Fullstrack</label>
                         <br>
                     </fieldset>
                     <fieldset>
-                        <input type="radio" id="mobil" name="dev"/>
+                        <input type="radio" id="mobil" name="dev" value="mobil"/>
                         <label for="mobil">Dev Mobil</label>
                         <br>
                     </fieldset>
                     <br>
                 </div>
                 
-                <input class="bouton" type="submit" value="ENREGISTRER"/>
+                <buton id="bouton2">ENREGISTRER</buton>
+                <!--<input class="bouton" type="submit" value="ENREGISTRER"/>-->
                 
             </form>
         </section>
 
-        <section>
-            <h2>CENTRES D'INTERET</h2>
+        <section id="section3" class="passive">
+            <h2>CENTRES D'INTÉRÊT</h2>
             
-            <form action="page.html" method="post">
+            <form action="" method="post">
                 
                 <div id="choix_multiples">
                     <fieldset>
@@ -174,7 +176,8 @@
                     </fieldset>
                 </div>
                 
-                <input class="bouton" type="submit" value="ENREGISTRER"/>
+                <buton id="bouton3">ENREGISTRER</buton>
+                <!--<input class="bouton" type="submit" value="ENREGISTRER"/>-->
                 
                 
             </form>
@@ -184,5 +187,6 @@
     <footer>
         
     </footer>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
