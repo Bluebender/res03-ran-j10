@@ -75,13 +75,14 @@ legend{
     border: none;
 }
 
-buton{
+button{
     color: white;
     background-color: #3a61ef;
     padding: 5px 10px;
     border: none;
     font-family: 'Work Sans', sans-serif;
     font-size: 0.8em;
+    margin: 10px;
 }
 .passive{
     opacity: 0.35;
